@@ -14,7 +14,10 @@ public class StudentController {
 
     @GetMapping("/")
     public String student(Model model) {
-        model.addAttribute("listStudent", StudentRepository.getStudentList());
-        return "listStudent";
+        return "home";
+    }
+    @GetMapping("/bai1")
+    public String bai1(Model model) {
+        return "Bài 1,2";
     }
 }
